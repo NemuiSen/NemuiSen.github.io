@@ -75,8 +75,8 @@ body {
 }
 
 .circle:hover {
-     width: 20vw;
-    height: 20vw;
+     width: 15vw;
+    height: 15vw;
     box-shadow: 0px 0px 10px 10px #000;
 }
 

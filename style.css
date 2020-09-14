@@ -1,0 +1,118 @@
+@keyframes shake {
+    0%   {transform: rotate( 0deg);}
+    25%  {transform: rotate( 5deg);}
+    50%  {transform: rotate(-5deg);}
+    100% {transform: rotate( 0deg);}
+}
+
+body {
+    background-color: #101;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    font-family: 'Press Start 2P';font-size: 10px;
+}
+
+.targeta {
+    background: linear-gradient(80deg, #ff00ff, #ffff00 50%, #001 50%);
+    background-position: 100%;
+    background-size: 200%;
+    box-shadow: 0px 0px 0px 0px #00f;
+    border-radius: 20px;
+    display: grid;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 3%;
+    
+    transition: 0.5s;
+}
+
+.targeta:hover {
+    padding: 8%;
+    background-position: 0;
+    box-shadow: 0px 0px 10px 1px #0f5;
+}
+
+.targeta h1 {
+    border-radius: 10px;
+    padding-top: 0.5em;
+    font-size: 150%;
+    height: 1.3em;
+    transition: 0.5s;
+}
+
+.targeta h1:hover {
+    color: aquamarine;
+    background-color: aliceblue;
+}
+
+.targeta a {
+    border-radius: 10px;
+    padding-top: 1em;
+    height: 2em;
+
+    transition: 0.25s;
+}
+
+.targeta:hover a {
+    background-color: aliceblue;
+    color: fuchsia;
+    animation: shake 0.5s;
+}
+
+.circle {
+    display: block;
+    background-color: aliceblue;
+    margin: auto;
+     width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px #f00;
+    
+    transition: all 0.5s;
+}
+
+.circle:hover {
+     width: 20vw;
+    height: 20vw;
+    box-shadow: 0px 0px 10px 10px #000;
+}
+
+.footer {
+    color: #100;
+    font-size: 30px;
+    padding: 5%;
+    background-color: aliceblue;
+}
+
+.footer p {
+    transition: all 0.5s;
+}
+
+.footer:hover p {
+    animation: shake ease 0.5s infinite;
+}
+
+a {
+    transition: all 0.25s;
+}
+
+a:link {
+    color: #00f;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}

@@ -31,15 +31,14 @@ body {
     box-shadow: 0px -10px 10px 1px #101;
     border-radius: 3vw;
     display: grid;
-    width: 40vw;
-    height: 25vw;
-    margin: auto;
-    padding: 5vw;
+    width: 30vw;
+    height: 20vw;
+    padding: 3vw;
     font-size: 1.5vw;
 }
 
 .targeta:hover {
-    padding: 10vw;
+    padding: 5vw;
     background-position: 0;
     box-shadow: 0px -10px 20px 1px #525;
 }
@@ -47,14 +46,17 @@ body {
 .targeta h1 {
     display: inline-block;
     border-radius: 2vw;
-    margin: auto;
     padding: 1.3vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.5em;
     transition: 0.5s;
 }
 
 .targeta h1:hover {
-    color: aquamarine;
     background-color: aliceblue;
+    color: aquamarine;
 }
 
 .targeta a {
@@ -75,15 +77,15 @@ body {
     background-color: aliceblue;
     margin: auto;
     display: block;
-     width: 10vw;
-    height: 10vw;
+     width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 10px #101;
 }
 
 .circle:hover {
-     width: 15vw;
-    height: 15vw;
+     width: 10vw;
+    height: 10vw;
     box-shadow: 0px 0px 100px 10px #a0a;
 }
 

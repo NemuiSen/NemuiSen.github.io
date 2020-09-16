@@ -11,40 +11,44 @@
     100% {transform: translateX(0em)}
 }
 
+* {
+    user-select: none;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    margin: auto;
+    transition: .5s;
+}
+
 body {
     background-color: #101;
     color: aliceblue;
-    text-align: center;
-    margin: auto;
-    font-family: 'Press Start 2P';font-size: 10px;
 }
 
 .targeta {
-    background: linear-gradient(80deg, #ff00ff, #ffff00 50%, #001 50%);
+    background: linear-gradient(99deg, #ff00ff, #ffff00 50%, #202 50%);
     background-position: 100%;
     background-size: 200%;
-    box-shadow: 0px 0px 0px 0px #00f;
-    border-radius: 20px;
+    box-shadow: 0px -10px 10px 1px #101;
+    border-radius: 3vw;
     display: grid;
-    width: 50%;
-    height: 30%;
+    width: 40vw;
+    height: 25vw;
     margin: auto;
-    padding: 3%;
- 
-    transition: 0.5s;
+    padding: 5vw;
+    font-size: 1.5vw;
 }
 
 .targeta:hover {
-    padding: 8%;
+    padding: 10vw;
     background-position: 0;
-    box-shadow: 0px 0px 20px 1px #0ff;
+    box-shadow: 0px -10px 20px 1px #525;
 }
 
 .targeta h1 {
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 2vw;
     margin: auto;
-    padding: 0.5em;
+    padding: 1.3vw;
     transition: 0.5s;
 }
 
@@ -55,12 +59,10 @@ body {
 
 .targeta a {
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 1.5vw;
     margin: auto;
-    padding: 1em;
+    padding: 1.3vw;
     animation: move_up 0.5s ease;
-
-    transition: 0.25s;
 }
 
 .targeta:hover a {
@@ -70,56 +72,50 @@ body {
 }
 
 .circle {
-    display: block;
     background-color: aliceblue;
     margin: auto;
+    display: block;
      width: 10vw;
     height: 10vw;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 1px #ff0;
-    
-    transition: all 0.5s;
+    box-shadow: 0px 0px 0px 10px #101;
 }
 
 .circle:hover {
      width: 15vw;
     height: 15vw;
-    box-shadow: 0px 0px 100px 10px #f0f;
+    box-shadow: 0px 0px 100px 10px #a0a;
 }
 
 .footer {
-    color: #100;
-    font-size: 30px;
-    padding: 5%;
-    background-color: aliceblue;
+    background: linear-gradient(90deg, #fff 50%, #f0f 50%, #ff0);
+    background-size: 200%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 5vw;
 }
 
-.footer p {
-    transition: all 0.5s;
+.footer:hover {
+    background-position: 100%;
 }
 
-.footer:hover p {
-    animation: shake ease 0.5s infinite;
-}
-
-a {
-    transition: all 0.25s;
-}
-
-a:link {
-    color: #00f;
+.footer a {
     text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1.5em;
 }
 
-a:visited {
-    text-decoration: none;
+.footer:hover a {
+    color: aliceblue;
+    animation: shake infinite 0.5s ease;
 }
 
-a:hover {
-    color: red;
-    text-decoration: none;
+.footer a:hover {
+    background-color: #101;
 }
 
-a:active {
-    text-decoration: none;
+.footer a p {
+    font-size: 1.5em;
 }
